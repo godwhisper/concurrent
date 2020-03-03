@@ -29,5 +29,9 @@ public class BufferDemo {
         bf.mark();
         // 将position置为mark
         bf.reset();
+
+
+        bf.clear();
+        bf.compact();
     }
 }
