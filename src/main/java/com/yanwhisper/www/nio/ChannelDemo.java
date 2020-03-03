@@ -16,7 +16,7 @@ public class ChannelDemo {
         while (data != -1) {
             System.out.println("Read " + data + "：");
             System.out.println(bf.capacity() + "-" + bf.position() + "-" + bf.limit());
-            // 切换bf的读写模式
+            // bf写模式切换到读模式
             bf.flip();
             System.out.println(bf.capacity() + "-" + bf.position() + "-" + bf.limit());
             while (bf.hasRemaining()) {
