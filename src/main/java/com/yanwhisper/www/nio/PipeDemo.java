@@ -16,6 +16,8 @@ public class PipeDemo {
             sinkChannel.write(bf1);
         }
 
+        System.out.println(new String(bf1.array()));
+
         Pipe.SourceChannel sourceChannel = pipe.source();
         ByteBuffer bf2 = ByteBuffer.allocate(48);
         sourceChannel.read(bf2);
